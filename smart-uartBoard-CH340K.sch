@@ -1,0 +1,626 @@
+EESchema Schematic File Version 4
+LIBS:smart-uartBoard-CH340K-cache
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "Smart-UartBoard"
+Date "2019-11-22"
+Rev "V1.1"
+Comp "BPI@Webduino"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector_Generic:Conn_01x08 J2
+U 1 1 5DCE1B11
+P 1260 1250
+F 0 "J2" H 1340 1242 50  0000 L CNN
+F 1 "Smart-Pin-1" H 890 750 50  0000 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x08_Pitch2.54mm" H 1260 1250 50  0001 C CNN
+F 3 "~" H 1260 1250 50  0001 C CNN
+	1    1260 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x08 J1
+U 1 1 5DCE343D
+P 1940 1240
+F 0 "J1" H 2020 1232 50  0000 L CNN
+F 1 "Smart-Pin-2" H 1560 730 50  0000 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x08_Pitch2.54mm" H 1940 1240 50  0001 C CNN
+F 3 "~" H 1940 1240 50  0001 C CNN
+	1    1940 1240
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1740 940  1580 940 
+Wire Wire Line
+	1740 1040 1580 1040
+Wire Wire Line
+	1740 1140 1580 1140
+Wire Wire Line
+	1740 1240 1580 1240
+Wire Wire Line
+	1740 1340 1580 1340
+Wire Wire Line
+	1740 1440 1580 1440
+Wire Wire Line
+	1740 1540 1580 1540
+Wire Wire Line
+	1740 1640 1580 1640
+Wire Wire Line
+	1060 950  940  950 
+Wire Wire Line
+	1060 1050 930  1050
+Wire Wire Line
+	1060 1150 930  1150
+Wire Wire Line
+	1060 1250 930  1250
+Wire Wire Line
+	1060 1350 930  1350
+Wire Wire Line
+	1060 1450 930  1450
+Wire Wire Line
+	1060 1550 930  1550
+Wire Wire Line
+	1060 1650 930  1650
+Text Label 1580 940  0    50   ~ 0
+TX
+Text Label 1580 1040 0    50   ~ 0
+RX
+Text Label 1580 1140 0    50   ~ 0
+05
+Text Label 1580 1240 0    50   ~ 0
+04
+Text Label 1580 1340 0    50   ~ 0
+00
+Text Label 1580 1440 0    50   ~ 0
+02
+Text Label 1580 1540 0    50   ~ 0
+15
+Text Label 1580 1640 0    50   ~ 0
+GND
+Text Label 940  950  0    50   ~ 0
+RST
+Text Label 930  1050 0    50   ~ 0
+AD
+Text Label 930  1150 0    50   ~ 0
+3V3
+Text Label 930  1250 0    50   ~ 0
+16
+Text Label 930  1350 0    50   ~ 0
+14
+Text Label 930  1450 0    50   ~ 0
+12
+Text Label 930  1550 0    50   ~ 0
+13
+Text Label 930  1650 0    50   ~ 0
+VCC
+Text Notes 520  2080 0    150  ~ 30
+Smart Connector
+Wire Wire Line
+	4550 3070 4390 3070
+Wire Wire Line
+	4550 3170 4390 3170
+Text Label 4390 3070 0    50   ~ 0
+UD+
+Text Label 4390 3170 0    50   ~ 0
+UD-
+Wire Wire Line
+	5250 2820 5410 2820
+Wire Wire Line
+	5250 3020 5410 3020
+NoConn ~ 5250 2920
+Wire Wire Line
+	5250 3220 5410 3220
+Wire Wire Line
+	5250 3320 5410 3320
+Text Label 5410 3320 2    50   ~ 0
+RXD
+Text Label 5410 3220 2    50   ~ 0
+TXD
+Text Label 5410 2820 2    50   ~ 0
+DTR
+Text Label 5410 3020 2    50   ~ 0
+RTS
+$Comp
+L Connector:USB_B_Micro J3
+U 1 1 5DD7CF8B
+P 5190 1260
+F 0 "J3" H 5247 1727 50  0000 C CNN
+F 1 "USB_B_Micro" H 5247 1636 50  0000 C CNN
+F 2 "Connector_USB:USB_Micro-B_Molex-105017-0001" H 5340 1210 50  0001 C CNN
+F 3 "~" H 5340 1210 50  0001 C CNN
+	1    5190 1260
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5490 1360 5650 1360
+Wire Wire Line
+	5490 1260 5650 1260
+Text Label 5650 1260 2    50   ~ 0
+UD+
+Text Label 5650 1360 2    50   ~ 0
+UD-
+$Comp
+L power:VCC #PWR0106
+U 1 1 5DD942EE
+P 5790 1060
+F 0 "#PWR0106" H 5790 910 50  0001 C CNN
+F 1 "VCC" V 5807 1188 50  0000 L CNN
+F 2 "" H 5790 1060 50  0001 C CNN
+F 3 "" H 5790 1060 50  0001 C CNN
+	1    5790 1060
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0107
+U 1 1 5DD95847
+P 5190 1660
+F 0 "#PWR0107" H 5190 1410 50  0001 C CNN
+F 1 "GND" H 5195 1487 50  0000 C CNN
+F 2 "" H 5190 1660 50  0001 C CNN
+F 3 "" H 5190 1660 50  0001 C CNN
+	1    5190 1660
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5090 1660 5190 1660
+Connection ~ 5190 1660
+$Comp
+L Connector_Generic:Conn_01x08 J5
+U 1 1 5DDC15D8
+P 2560 1240
+F 0 "J5" H 2640 1232 50  0000 L CNN
+F 1 "Smart-Pin-1" H 2190 740 50  0000 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x08_Pitch2.54mm" H 2560 1240 50  0001 C CNN
+F 3 "~" H 2560 1240 50  0001 C CNN
+	1    2560 1240
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x08 J4
+U 1 1 5DDC15DE
+P 3240 1230
+F 0 "J4" H 3320 1222 50  0000 L CNN
+F 1 "Smart-Pin-2" H 2860 720 50  0000 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x08_Pitch2.54mm" H 3240 1230 50  0001 C CNN
+F 3 "~" H 3240 1230 50  0001 C CNN
+	1    3240 1230
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3040 930  2880 930 
+Wire Wire Line
+	3040 1030 2880 1030
+Wire Wire Line
+	3040 1130 2880 1130
+Wire Wire Line
+	3040 1230 2880 1230
+Wire Wire Line
+	3040 1330 2880 1330
+Wire Wire Line
+	3040 1430 2880 1430
+Wire Wire Line
+	3040 1530 2880 1530
+Wire Wire Line
+	3040 1630 2880 1630
+Wire Wire Line
+	2360 940  2240 940 
+Wire Wire Line
+	2360 1040 2230 1040
+Wire Wire Line
+	2360 1140 2230 1140
+Wire Wire Line
+	2360 1240 2230 1240
+Wire Wire Line
+	2360 1340 2230 1340
+Wire Wire Line
+	2360 1440 2230 1440
+Wire Wire Line
+	2360 1540 2230 1540
+Wire Wire Line
+	2360 1640 2230 1640
+Text Label 2880 930  0    50   ~ 0
+TX
+Text Label 2880 1030 0    50   ~ 0
+RX
+Text Label 2880 1130 0    50   ~ 0
+05
+Text Label 2880 1230 0    50   ~ 0
+04
+Text Label 2880 1330 0    50   ~ 0
+00
+Text Label 2880 1430 0    50   ~ 0
+02
+Text Label 2880 1530 0    50   ~ 0
+15
+Text Label 2880 1630 0    50   ~ 0
+GND
+Text Label 2240 940  0    50   ~ 0
+RST
+Text Label 2230 1040 0    50   ~ 0
+AD
+Text Label 2230 1140 0    50   ~ 0
+3V3
+Text Label 2230 1240 0    50   ~ 0
+16
+Text Label 2230 1340 0    50   ~ 0
+14
+Text Label 2230 1440 0    50   ~ 0
+12
+Text Label 2230 1540 0    50   ~ 0
+13
+Text Label 2230 1640 0    50   ~ 0
+VCC
+$Comp
+L power:GND #PWR0108
+U 1 1 5DD305D4
+P 4900 3580
+F 0 "#PWR0108" H 4900 3330 50  0001 C CNN
+F 1 "GND" H 4905 3407 50  0000 C CNN
+F 2 "" H 4900 3580 50  0001 C CNN
+F 3 "" H 4900 3580 50  0001 C CNN
+	1    4900 3580
+	1    0    0    -1  
+$EndComp
+$Comp
+L BPI:CH340K U1
+U 1 1 5DD31578
+P 4650 2770
+F 0 "U1" H 5040 2820 50  0000 C CNN
+F 1 "CH340K" H 5110 2070 50  0000 C CNN
+F 2 "BPI:ESSOP-10" H 4715 2855 50  0001 C CNN
+F 3 "" H 4715 2855 50  0001 C CNN
+	1    4650 2770
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4900 3580 4900 3520
+Wire Wire Line
+	4800 3520 4900 3520
+Connection ~ 4900 3520
+$Comp
+L Regulator_Linear:AMS1117-3.3 U2
+U 1 1 5DD5403D
+P 7790 1210
+F 0 "U2" H 7790 1452 50  0000 C CNN
+F 1 "AMS1117-3.3" H 7790 1361 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 7790 1410 50  0001 C CNN
+F 3 "http://www.advanced-monolithic.com/pdf/ds1117.pdf" H 7890 960 50  0001 C CNN
+	1    7790 1210
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7490 1210 7300 1210
+Wire Wire Line
+	8090 1210 8160 1210
+$Comp
+L power:GND #PWR0101
+U 1 1 5DD59B9E
+P 7790 1610
+F 0 "#PWR0101" H 7790 1360 50  0001 C CNN
+F 1 "GND" H 7795 1437 50  0000 C CNN
+F 2 "" H 7790 1610 50  0001 C CNN
+F 3 "" H 7790 1610 50  0001 C CNN
+	1    7790 1610
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7790 1610 7790 1510
+$Comp
+L Device:C C2
+U 1 1 5DD5D3E2
+P 7300 1380
+F 0 "C2" V 7100 1420 50  0000 C CNN
+F 1 "10uF" V 7170 1450 50  0000 C CNN
+F 2 "BPI:C0603" H 7338 1230 50  0001 C CNN
+F 3 "~" H 7300 1380 50  0001 C CNN
+	1    7300 1380
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7300 1230 7300 1210
+$Comp
+L power:VCC #PWR0102
+U 1 1 5DD61BCD
+P 7300 1210
+F 0 "#PWR0102" H 7300 1060 50  0001 C CNN
+F 1 "VCC" H 7317 1383 50  0000 C CNN
+F 2 "" H 7300 1210 50  0001 C CNN
+F 3 "" H 7300 1210 50  0001 C CNN
+	1    7300 1210
+	1    0    0    -1  
+$EndComp
+Connection ~ 7300 1210
+$Comp
+L power:GND #PWR0103
+U 1 1 5DD642D0
+P 7300 1530
+F 0 "#PWR0103" H 7300 1280 50  0001 C CNN
+F 1 "GND" H 7305 1357 50  0000 C CNN
+F 2 "" H 7300 1530 50  0001 C CNN
+F 3 "" H 7300 1530 50  0001 C CNN
+	1    7300 1530
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 5DD64925
+P 8160 1360
+F 0 "C1" V 7960 1400 50  0000 C CNN
+F 1 "10uF" V 8030 1430 50  0000 C CNN
+F 2 "BPI:C0603" H 8198 1210 50  0001 C CNN
+F 3 "~" H 8160 1360 50  0001 C CNN
+	1    8160 1360
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0104
+U 1 1 5DD66346
+P 8160 1510
+F 0 "#PWR0104" H 8160 1260 50  0001 C CNN
+F 1 "GND" H 8165 1337 50  0000 C CNN
+F 2 "" H 8160 1510 50  0001 C CNN
+F 3 "" H 8160 1510 50  0001 C CNN
+	1    8160 1510
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR0105
+U 1 1 5DD666E3
+P 8160 1210
+F 0 "#PWR0105" H 8160 1060 50  0001 C CNN
+F 1 "+3V3" H 8175 1383 50  0000 C CNN
+F 2 "" H 8160 1210 50  0001 C CNN
+F 3 "" H 8160 1210 50  0001 C CNN
+	1    8160 1210
+	1    0    0    -1  
+$EndComp
+Connection ~ 8160 1210
+$Comp
+L power:+3V3 #PWR0109
+U 1 1 5DD7CC0C
+P 4900 2670
+F 0 "#PWR0109" H 4900 2520 50  0001 C CNN
+F 1 "+3V3" H 4915 2843 50  0000 C CNN
+F 2 "" H 4900 2670 50  0001 C CNN
+F 3 "" H 4900 2670 50  0001 C CNN
+	1    4900 2670
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR0110
+U 1 1 5DD7D283
+P 4750 2670
+F 0 "#PWR0110" H 4750 2520 50  0001 C CNN
+F 1 "+3V3" H 4765 2843 50  0000 C CNN
+F 2 "" H 4750 2670 50  0001 C CNN
+F 3 "" H 4750 2670 50  0001 C CNN
+	1    4750 2670
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D1
+U 1 1 5DDA2573
+P 10150 1150
+F 0 "D1" H 10143 1366 50  0000 C CNN
+F 1 "LED-R" H 10143 1275 50  0000 C CNN
+F 2 "LED_SMD:LED_0603_1608Metric" H 10150 1150 50  0001 C CNN
+F 3 "~" H 10150 1150 50  0001 C CNN
+	1    10150 1150
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 5DDA3408
+P 9850 1150
+F 0 "R3" V 9940 1150 50  0000 C CNN
+F 1 "1K" V 9850 1140 50  0000 C CNN
+F 2 "BPI:R0402" V 9780 1150 50  0001 C CNN
+F 3 "~" H 9850 1150 50  0001 C CNN
+	1    9850 1150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+3V3 #PWR0111
+U 1 1 5DDA62CE
+P 9700 1150
+F 0 "#PWR0111" H 9700 1000 50  0001 C CNN
+F 1 "+3V3" V 9715 1278 50  0000 L CNN
+F 2 "" H 9700 1150 50  0001 C CNN
+F 3 "" H 9700 1150 50  0001 C CNN
+	1    9700 1150
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	10300 1150 10650 1150
+$Comp
+L Device:LED D2
+U 1 1 5DDA88F2
+P 10160 1520
+F 0 "D2" H 10153 1736 50  0000 C CNN
+F 1 "LED-R" H 10153 1645 50  0000 C CNN
+F 2 "LED_SMD:LED_0603_1608Metric" H 10160 1520 50  0001 C CNN
+F 3 "~" H 10160 1520 50  0001 C CNN
+	1    10160 1520
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 5DDA88FC
+P 9860 1520
+F 0 "R4" V 9940 1530 50  0000 C CNN
+F 1 "1K" V 9850 1520 50  0000 C CNN
+F 2 "BPI:R0402" V 9790 1520 50  0001 C CNN
+F 3 "~" H 9860 1520 50  0001 C CNN
+	1    9860 1520
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+3V3 #PWR0112
+U 1 1 5DDA8906
+P 9710 1520
+F 0 "#PWR0112" H 9710 1370 50  0001 C CNN
+F 1 "+3V3" V 9725 1648 50  0000 L CNN
+F 2 "" H 9710 1520 50  0001 C CNN
+F 3 "" H 9710 1520 50  0001 C CNN
+	1    9710 1520
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	10310 1520 10660 1520
+Text Label 10650 1150 2    50   ~ 0
+TXD
+Text Label 10660 1520 2    50   ~ 0
+RXD
+$Comp
+L Device:Fuse F1
+U 1 1 5DD8B1CB
+P 5640 1060
+F 0 "F1" V 5443 1060 50  0000 C CNN
+F 1 "Fuse 500mA" V 5534 1060 50  0000 C CNN
+F 2 "BPI:R0805" V 5570 1060 50  0001 C CNN
+F 3 "~" H 5640 1060 50  0001 C CNN
+	1    5640 1060
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5870 3050 6370 3050
+Wire Wire Line
+	5870 3140 6370 3140
+Text Label 5870 3140 0    50   ~ 0
+RX
+Text Label 6370 3140 2    50   ~ 0
+TXD
+Text Label 6370 3050 2    50   ~ 0
+RXD
+Text Label 5870 3050 0    50   ~ 0
+TX
+Wire Notes Line
+	4110 2220 4110 480 
+Wire Notes Line
+	8700 2220 8700 470 
+Wire Notes Line
+	470  2220 11220 2220
+Wire Notes Line
+	3540 4000 3540 2220
+Wire Notes Line
+	6700 470  6700 4000
+Text Label 2550 3410 2    50   ~ 0
+RTS
+Text Label 2550 2570 2    50   ~ 0
+DTR
+Text Label 700  2370 0    50   ~ 0
+RST
+Text Label 700  3610 0    50   ~ 0
+00
+Wire Wire Line
+	1210 3610 700  3610
+Wire Wire Line
+	1210 2370 700  2370
+Wire Wire Line
+	2210 3410 2550 3410
+Connection ~ 2210 3410
+Wire Wire Line
+	2070 3410 2210 3410
+Wire Wire Line
+	2210 3100 2210 3410
+Wire Wire Line
+	2210 2570 2550 2570
+Connection ~ 2210 2570
+Wire Wire Line
+	2210 2880 2210 2570
+Wire Wire Line
+	1210 3210 1210 3100
+Wire Wire Line
+	1210 2880 1210 2770
+Wire Wire Line
+	2210 3100 1210 2880
+Wire Wire Line
+	2210 2880 1210 3100
+Wire Wire Line
+	2070 2570 2210 2570
+Wire Wire Line
+	1510 3410 1770 3410
+Wire Wire Line
+	1510 2570 1770 2570
+$Comp
+L Device:R R1
+U 1 1 5DD2ED0F
+P 1920 2570
+F 0 "R1" V 1840 2570 50  0000 C CNN
+F 1 "1K" V 1920 2570 50  0000 C CNN
+F 2 "BPI:R0402" V 1850 2570 50  0001 C CNN
+F 3 "~" H 1920 2570 50  0001 C CNN
+	1    1920 2570
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5DD2EC09
+P 1920 3410
+F 0 "R2" V 1840 3410 50  0000 C CNN
+F 1 "1K" V 1920 3410 50  0000 C CNN
+F 2 "BPI:R0402" V 1850 3410 50  0001 C CNN
+F 3 "~" H 1920 3410 50  0001 C CNN
+	1    1920 3410
+	0    1    1    0   
+$EndComp
+$Comp
+L Transistor_BJT:MMBT3904 Q2
+U 1 1 5DD2C7E1
+P 1310 3410
+F 0 "Q2" H 1501 3364 50  0000 L CNN
+F 1 "MMBT3904" H 1501 3455 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 1510 3335 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf" H 1310 3410 50  0001 L CNN
+	1    1310 3410
+	-1   0    0    1   
+$EndComp
+$Comp
+L Transistor_BJT:MMBT3904 Q1
+U 1 1 5DD299FE
+P 1310 2570
+F 0 "Q1" H 1501 2616 50  0000 L CNN
+F 1 "MMBT3904" H 1501 2525 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 1510 2495 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf" H 1310 2570 50  0001 L CNN
+	1    1310 2570
+	-1   0    0    -1  
+$EndComp
+Text Notes 3380 3520 2    50   ~ 0
+Auto program
+Text Notes 3460 3960 2    50   ~ 0
+1   1      1   1\n0   0      1   1\n1   0      0   1\n0   1      1   0
+Text Notes 3490 3620 2    50   ~ 0
+DTR RTS-->RST 00\n
+Wire Notes Line
+	470  4000 6700 4000
+$Comp
+L BPI:BPI-LOGO O1
+U 1 1 5DE79AFB
+P 10010 6820
+F 0 "O1" H 10010 6778 60  0001 C CNN
+F 1 "BPI-LOGO" H 10010 6862 60  0001 C CNN
+F 2 "BPI:bpi-logo" H 10010 6820 50  0001 C CNN
+F 3 "" H 10010 6820 50  0001 C CNN
+	1    10010 6820
+	1    0    0    -1  
+$EndComp
+$Comp
+L BPI:Webduino-Logo O2
+U 1 1 5DE79F06
+P 10670 6820
+F 0 "O2" H 10670 6750 60  0001 C CNN
+F 1 "Webduino-Logo" H 10670 6890 60  0001 C CNN
+F 2 "BPI:webduino-logo" H 10670 6820 50  0001 C CNN
+F 3 "" H 10670 6820 50  0001 C CNN
+	1    10670 6820
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
